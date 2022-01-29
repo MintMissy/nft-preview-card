@@ -38,21 +38,34 @@ body {
   aspect-ratio: 1;
 }
 
+.card__banner::before,
 .card__banner::after {
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   content: '';
-  opacity: 0.5;
-  background-color: transparent;
   height: 100%;
   width: 100%;
   transition: 0.1s;
 }
 
-.card__banner:hover::after {
+.card__banner::before {
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+.card__banner:hover::before {
   background-color: var(--clr-cyan);
+}
+
+.card__banner::after {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__banner:hover::after {
+  background-image: url('images/icon-view.svg');
 }
 
 .card__banner-banner {
