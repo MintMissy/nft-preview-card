@@ -75,6 +75,7 @@ body {
 
 .card-title {
   font-size: 1.35rem;
+  text-decoration: none;
   font-weight: 600;
   color: var(--clr-white);
   cursor: pointer;
@@ -89,6 +90,8 @@ body {
 }
 
 .card__details {
+  list-style: none;
+  padding-left: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -109,11 +112,9 @@ body {
   color: var(--clr-light-blue);
 }
 
-.card hr {
-  border: 1px solid var(--clr-dark-blue);
-}
-
 .card__credits {
+  border-top: 1px solid var(--clr-dark-blue);
+  padding-top: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -131,6 +132,7 @@ body {
 }
 
 .card__credits-username {
+  text-decoration: none;
   color: var(--clr-white);
   cursor: pointer;
 }
